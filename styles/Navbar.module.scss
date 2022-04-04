@@ -1,0 +1,48 @@
+.navbar {
+    height: 3rem;
+    background-color: #ededdc;
+    color: #644a3a;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    border-bottom: 5px solid #644a3a;
+    font-family: 'Raleway', sans-serif;
+
+    .navbaritems {
+        margin-left: 2rem;
+        display: flex;
+        width: 400px;
+        place-self: center;
+        justify-content: space-around;
+    }
+
+    .navbarcontact {
+        place-content: flex-end;
+        width: 30%;
+        height: 1rem;
+        display: flex;
+        grid-gap: 1em;
+        gap: 1em;
+        place-items: center;
+        margin-right: 2rem;
+
+        .sociallink {
+            transition: .2s;
+            height: 2em;
+            border-radius: 9px;
+      
+            &:active {
+                box-shadow: 0 0 8px 2px white;
+            }
+            
+            a {
+                font-size: 2rem;
+                transition: .3s;
+      
+                &:hover {
+                    color: rgb(244, 124, 69);
+                }
+            }
+        }
+    }
+}
