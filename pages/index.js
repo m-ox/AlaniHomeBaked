@@ -29,8 +29,7 @@ export default function Home() {
       <Header />
       <Navbar />
 
-      <div>
-        main page content
+      <div className={styles.main}>
       </div>
 
       <Footer />
