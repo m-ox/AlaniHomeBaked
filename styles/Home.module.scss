@@ -1,15 +1,3 @@
-.container {
-  display: flex;
-  flex-direction: column;
-
-  .main {
-    height: 90vh;
-    width: 100vw;
-    background-image: url("../components/images/alanibooth.png");
-    background-size: cover;
-  }
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;

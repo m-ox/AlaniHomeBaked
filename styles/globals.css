@@ -12,6 +12,16 @@ a {
   text-decoration: none;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  width: 100vw;
+  background-color: white;
+}
+
 * {
   padding: 0;
   margin: 0;

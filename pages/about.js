@@ -1,14 +1,25 @@
-import Link from 'next/link'
+import React from 'react'
+import Layout from '../components/layout.js'
+import Head from 'next/head'
+
+import styles from '../styles/About.module.scss'
 
 export default function About() {
   return (
-    <>
-      <h1>First Post</h1>
-      <h2>
-        <Link href="/">
-          <a>Back to home</a>
-        </Link>
-      </h2>
-    </>
+    <div className="container">
+
+      <Layout>
+        <Head>
+          <title>About Us</title>
+          <meta name="description" content="Alani's baked goods and homemade gifts! Local to the Coeur d'Alene community." />
+          <link rel="icon" href="/favicon.ico" />
+          
+        </Head>
+
+        <div className="main">About content</div>
+
+      </Layout>
+      
+    </div>
   )
 }

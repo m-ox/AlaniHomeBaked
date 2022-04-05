@@ -8,14 +8,16 @@ export default function Navbar() {
         <div className={styles.navbar}>
 
             <div className={styles.navbaritems}>
-                <a>Home</a>
+                <Link href="/">
+                    <a>Home</a>
+                </Link>
                 <Link href="/about">
                     <a>About</a>
                 </Link>
                 <Link href="/contact">
                     <a>Contact</a>
                 </Link>
-                <Link href="/gallery">
+                <Link href="/">
                     <a>Gallery</a>
                 </Link>
                 <Link href="/faq">
