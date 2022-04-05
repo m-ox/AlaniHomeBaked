@@ -1,4 +1,5 @@
 import styles from '/styles/Navbar.module.scss'
+import Link from 'next/link'
 
 import { FaInstagram, FaFacebook } from 'react-icons/fa'
 
@@ -8,10 +9,18 @@ export default function Navbar() {
 
             <div className={styles.navbaritems}>
                 <a>Home</a>
-                <a>About</a>
-                <a>Contact</a>
-                <a>Gallery</a>
+                <Link href="/about">
+                    <a>About</a>
+                </Link>
+                <Link href="/contact">
+                    <a>Contact</a>
+                </Link>
+                <Link href="/gallery">
+                    <a>Gallery</a>
+                </Link>
+                <Link href="/faq">
                 <a>FAQ</a>
+                </Link>
             </div>
 
             <div className={styles.navbarcontact}>
