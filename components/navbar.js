@@ -3,6 +3,10 @@ import Link from 'next/link'
 
 import { FaInstagram, FaFacebook } from 'react-icons/fa'
 
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+
 export default function Navbar() {
     return (
         <div className={styles.navbar}>
@@ -17,9 +21,11 @@ export default function Navbar() {
                 <Link href="/contact">
                     <a>Contact</a>
                 </Link>
-                <Link href="/">
-                    <a>Gallery</a>
-                </Link>
+                
+                <a>
+                    Gallery
+                </a>
+
                 <Link href="/faq">
                 <a>FAQ</a>
                 </Link>
