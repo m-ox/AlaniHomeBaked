@@ -1,8 +1,8 @@
 import React from 'react'
-import Layout from '../components/layout.js'
+import Layout from '../../components/layout'
 import Head from 'next/head'
 
-import styles from '../styles/Goods.module.scss'
+import styles from '../../styles/Goods.module.scss'
 
 export default function Candles() {
   return (

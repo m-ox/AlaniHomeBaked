@@ -1,8 +1,8 @@
 import React from 'react'
-import Layout from '../components/layout.js'
+import Layout from '../../components/layout'
 import Head from 'next/head'
 
-import styles from '../styles/Goods.module.scss'
+import styles from '../../styles/Goods.module.scss'
 
 export default function HomeDecor() {
   return (
@@ -10,13 +10,13 @@ export default function HomeDecor() {
 
       <Layout>
         <Head>
-          <title>MHome Decor</title>
+          <title>Home Decor</title>
           <meta name="description" content="Alani's baked goods and homemade gifts! Local to the Coeur d'Alene community." />
           <link rel="icon" href="/favicon.ico" />
           
         </Head>
 
-        <div className="main">MHome Decor content</div>
+        <div className="main">Home Decor content</div>
 
       </Layout>
       

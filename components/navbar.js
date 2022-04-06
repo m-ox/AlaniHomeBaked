@@ -1,3 +1,4 @@
+import * as React from 'react'
 import styles from '/styles/Navbar.module.scss'
 import Link from 'next/link'
 
@@ -8,27 +9,84 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
 export default function Navbar() {
+        const [anchorEl, setAnchorEl] = React.useState(null)
+        const open = Boolean(anchorEl)
+        const handleClick = (e) => {
+          setAnchorEl(e.currentTarget);
+        }
+        const handleClose = () => {
+          setAnchorEl(null);
+        }
+
     return (
         <div className={styles.navbar}>
 
             <div className={styles.navbaritems}>
-                <Link href="/">
-                    <a>Home</a>
-                </Link>
-                <Link href="/about">
-                    <a>About</a>
-                </Link>
-                <Link href="/contact">
-                    <a>Contact</a>
-                </Link>
-                
-                <a>
-                    Gallery
-                </a>
+                <Button variant="text" sx={{
+                        height: 20,
+                        color: "#644a3a"
+                    }}>
+                    <Link href="/">
+                        <a>Home</a>
+                    </Link>
+                </Button>
 
-                <Link href="/faq">
-                <a>FAQ</a>
-                </Link>
+                <Button variant="text" sx={{
+                        height: 20,
+                        color: "#644a3a"
+                    }}>
+                    <Link href="/about">
+                        <a>About</a>
+                    </Link>
+                </Button>
+
+                <Button variant="text" sx={{
+                        height: 20,
+                        color: "#644a3a"
+                    }}>
+                    <Link href="/contact">
+                        <a>Contact</a>
+                    </Link>
+                </Button>
+
+                <Button variant="text" sx={{
+                        height: 20,
+                        color: "#644a3a"
+                    }}>
+                    <Link href="/faq">
+                    <a>FAQ</a>
+                    </Link>
+                </Button>
+                
+                <Button
+                    id="basic-button"
+                    aria-controls={open ? 'gallery-menu' : undefined}
+                    aria-haspopup="true"
+                    aria-expanded={open ? 'true' : undefined}
+                    onClick={handleClick}
+                    sx={{
+                        height: 20,
+                        color: "#644a3a"
+                    }}
+                >
+                    Gallery
+                </Button>
+                <Menu
+                    id="gallery-menu"
+                    anchorEl={anchorEl}
+                    open={open}
+                    onClose={handleClose}
+                    MenuListProps={{
+                    'aria-labelledby': 'basic-button',
+                    }}
+                >
+                    <MenuItem onClick={handleClose}><Link href="/gallery/topsellers">Top Sellers</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link href="/gallery/cakes">Cakes</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link href="/gallery/homedecor">Home Decor</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link href="/gallery/candleswax">Candles & Wax Melts</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link href="/gallery/macarons">Macarons</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link href="/gallery/jewelry">Jewelry</Link></MenuItem>
+                </Menu>
             </div>
 
             <div className={styles.navbarcontact}>
@@ -48,4 +106,5 @@ export default function Navbar() {
             
         </div>
     )
+
 }
