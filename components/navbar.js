@@ -79,7 +79,7 @@ export default function Navbar() {
                         horizontal: 'left',
                     }}
                 >
-                    Gallery
+                    Products
                 </Button>
                 <Menu
                     id="gallery-menu"
@@ -91,12 +91,12 @@ export default function Navbar() {
                     }}
                     TransitionComponent={Fade}
                 >
-                    <MenuItem onClick={handleClose}><Link href="/gallery/topsellers">Top Sellers</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link href="/gallery/cakes">Cakes</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link href="/gallery/macarons">Macarons</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link href="/gallery/jewelry">Jewelry</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link href="/gallery/homedecor">Home Decor</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link href="/gallery/candleswax">Candles & Wax Melts</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link href="/featured/cookies">Cookies</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link href="/featured/cakes">Cakes</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link href="/featured/macarons">Macarons</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link href="/featured/jewelry">Jewelry</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link href="/featured/homedecor">Home Decor</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link href="/featured/candleswax">Candles & Wax Melts</Link></MenuItem>
                 </Menu>
             </div>
 

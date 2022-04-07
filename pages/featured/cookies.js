@@ -4,19 +4,19 @@ import Head from 'next/head'
 
 import styles from '../../styles/Goods.module.scss'
 
-export default function TopSellers() {
+export default function Cookie() {
   return (
     <div className="container">
 
       <Layout>
         <Head>
-          <title>Top Sellers</title>
+          <title>Cake</title>
           <meta name="description" content="Alani's baked goods and homemade gifts! Local to the Coeur d'Alene community." />
           <link rel="icon" href="/favicon.ico" />
           
         </Head>
 
-        <div className="main">Top Sellers content</div>
+        <div className="main">Cookie content</div>
 
       </Layout>
       
