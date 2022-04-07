@@ -23,8 +23,8 @@ export default function Home() {
 
             {/* TODO: 2:1 image feature component */}
             <Twosome
-              first={<div>cookies!!</div>}
-              second={<div>cakes!!</div>}
+              first={{product: 'cake', summary: 'delicious cake', image: '/images/cakes.png'}}
+              second={{product: 'cookies', summary: 'delicious cookies', image: '/images/cookies.png'}}
             />
 
             <h1>Our Top Selling Gifts</h1>
