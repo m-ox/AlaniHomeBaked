@@ -8,6 +8,8 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
+import Fade from '@mui/material/Fade';
+
 export default function Navbar() {
         const [anchorEl, setAnchorEl] = React.useState(null)
         const open = Boolean(anchorEl)
@@ -68,6 +70,14 @@ export default function Navbar() {
                         height: 20,
                         color: "#644a3a"
                     }}
+                    anchorOrigin={{
+                        vertical: 'top',
+                        horizontal: 'left',
+                    }}
+                        transformOrigin={{
+                        vertical: 'top',
+                        horizontal: 'left',
+                    }}
                 >
                     Gallery
                 </Button>
@@ -79,13 +89,14 @@ export default function Navbar() {
                     MenuListProps={{
                     'aria-labelledby': 'basic-button',
                     }}
+                    TransitionComponent={Fade}
                 >
                     <MenuItem onClick={handleClose}><Link href="/gallery/topsellers">Top Sellers</Link></MenuItem>
                     <MenuItem onClick={handleClose}><Link href="/gallery/cakes">Cakes</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link href="/gallery/homedecor">Home Decor</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link href="/gallery/candleswax">Candles & Wax Melts</Link></MenuItem>
                     <MenuItem onClick={handleClose}><Link href="/gallery/macarons">Macarons</Link></MenuItem>
                     <MenuItem onClick={handleClose}><Link href="/gallery/jewelry">Jewelry</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link href="/gallery/homedecor">Home Decor</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link href="/gallery/candleswax">Candles & Wax Melts</Link></MenuItem>
                 </Menu>
             </div>
 
