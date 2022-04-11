@@ -4,8 +4,6 @@ import Head from 'next/head'
 
 import styles from '../styles/Home.module.scss'
 
-import Twosome from '../components/twosome'
-
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -22,10 +20,6 @@ export default function Home() {
             <h6>Treat yourself and loved ones!</h6>
 
             {/* TODO: 2:1 image feature component */}
-            <Twosome
-              first={{product: 'cake', summary: 'delicious cake', image: '/images/cakes.png'}}
-              second={{product: 'cookies', summary: 'delicious cookies', image: '/images/cookies.png'}}
-            />
 
             <h1>Our Top Selling Gifts</h1>
             <h6>Gift yourself and others!</h6>
