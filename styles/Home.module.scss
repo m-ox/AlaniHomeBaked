@@ -4,3 +4,32 @@
     flex-direction: column;
   }
 }
+
+.twosome {
+  color: red;
+}
+
+.texty {
+  width: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 8em 0;
+  gap: 2em;
+
+  h1 {
+    color: #f8c78f;
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+
+  h6 {
+    font-style: italic;
+    font-size: x-large;
+    font-family: "GFS Didot", serif;
+    font-weight: 100;
+  }
+}

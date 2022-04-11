@@ -18,8 +18,12 @@ a {
 }
 
 .main {
-  width: 100vw;
-  background-color: white;
+  width: auto;
+  background-color: #f2c096;
+}
+
+.main:first-child {
+  margin: 0 5em;
 }
 
 * {

@@ -12,6 +12,7 @@
     "@emailjs/browser": "^3.5.0",
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
+    "@fontsource/gfs-didot": "^4.5.7",
     "@mui/material": "^5.5.3",
     "next": "12.1.4",
     "node-sass": "^7.0.1",
