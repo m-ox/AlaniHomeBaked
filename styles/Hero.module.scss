@@ -1,0 +1,23 @@
+.heroContainer {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    div {
+        position: absolute;
+        background-color: #ededdc87;
+        width: inherit;
+        text-align: center;
+        padding: 70px 0;
+        font-size: 1em;
+    }
+
+    .heroText {
+        z-index: 1;
+        padding: 10px 0;
+        height: 50%;
+    }
+}

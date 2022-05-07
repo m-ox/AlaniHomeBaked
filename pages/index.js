@@ -1,9 +1,10 @@
-import React from 'react'
+import { useState } from 'react'
 import Layout from '../components/layout.js'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import Hero from '../components/herosection'
 import Twosome from '../components/twosome'
 
 import Cookies from '../images/cookies.png'
@@ -11,10 +12,32 @@ import Cakes from '../images/cakes.png'
 import Candles from '../images/candles.png'
 import Earrings from '../images/earrings.png'
 import Plants from '../images/plants.png'
+import HeroImage from '../images/hero.png'
 
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
+  const [title, setTitle] = useState(<h1>Happy Mother's Day</h1>)
+  const [summary, setSummary] = useState(
+    <>
+      <h6>Mother's Day Specials</h6>
+      <span className={styles.item}>
+        <p>4-inch Cake, $30:</p>
+        <p>Lemon cake with a bouquet of lemon buttercream (pictured).</p>
+      </span>
+      <span className={styles.item}>
+        <p>Cupcakes, $5 each:</p>
+        <p>Vanilla or chocolate cupcake with a bouquet of vanilla buttercream.</p>
+      </span>
+      <span className={styles.item}>
+        <p>Floral Wreath, $60:</p>
+        <p>Handmade with care, a selection of synthetic springtime flowers.</p>
+      </span>
+      <p>Ask me about other personalized gifts!</p>
+    </>
+  )
+
+  
   return (
     <div className={styles.container}>
 
@@ -27,7 +50,11 @@ export default function Home() {
 
         <div className="main">
 
-            {/* Hero Section */}
+            <Hero
+              img={<Image layout="fill" objectFit="cover" src={HeroImage}/>}
+              title={title}
+              summary={summary}
+            />
 
             <div className={styles.texty}>
               <h1>Our Top Selling Baked Goods</h1>
